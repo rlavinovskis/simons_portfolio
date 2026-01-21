@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../utils/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Portfolio</title>
+</head>
+<body>
+<main>
+    <nav class="header">
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">ENG</button>
+            <button class="lang-btn" data-lang="lv">LV</button>
+        </div>
+        <div class="nav">
+            <div class="menu">
+                <button class="active" data-section="main">MAIN</button>
+                <button data-section="about">ABOUT</button>
+                <button data-section="info">INFO</button>
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="../../utils/logo.png" alt="Logo" class="logo">
+        </div>
+    </nav>
+
+    <!-- Main Grid View -->
+    <div class="container" id="gridView">
+        <button class="grid-item" data-video-id="WNCl-69POro" data-title="Project 1" data-description="Short description about this amazing project">
+            <img src="https://img.youtube.com/vi/WNCl-69POro/maxresdefault.jpg" alt="Video 1">
+            <div class="overlay">
+                <h3>Project 1</h3>
+                <p>Short description about this amazing project</p>
+            </div>
+        </button>
+        <button class="grid-item" data-video-id="WNCl-69POro" data-title="Project 2" data-description="Innovative solution for modern challenges">
+            <img src="https://img.youtube.com/vi/WNCl-69POro/maxresdefault.jpg" alt="Video 2">
+            <div class="overlay">
+                <h3>Project 2</h3>
+                <p>Innovative solution for modern challenges</p>
+            </div>
+        </button>
+        <button class="grid-item" data-video-id="WNCl-69POro" data-title="Project 3" data-description="Creative work showcasing unique techniques">
+            <img src="https://img.youtube.com/vi/WNCl-69POro/maxresdefault.jpg" alt="Video 3">
+            <div class="overlay">
+                <h3>Project 3</h3>
+                <p>Creative work showcasing unique techniques</p>
+            </div>
+        </button>
+        <button class="grid-item" data-video-id="WNCl-69POro" data-title="Project 4" data-description="Detailed exploration of interesting concepts">
+            <img src="https://img.youtube.com/vi/WNCl-69POro/maxresdefault.jpg" alt="Video 4">
+            <div class="overlay">
+                <h3>Project 4</h3>
+                <p>Detailed exploration of interesting concepts</p>
+            </div>
+        </button>
+        <button class="grid-item" data-video-id="WNCl-69POro" data-title="Project 5" data-description="Experimental approach to design">
+            <img src="https://img.youtube.com/vi/WNCl-69POro/maxresdefault.jpg" alt="Video 5">
+            <div class="overlay">
+                <h3>Project 5</h3>
+                <p>Experimental approach to design</p>
+            </div>
+        </button>
+        <button class="grid-item" data-video-id="WNCl-69POro" data-title="Project 6" data-description="Professional portfolio piece">
+            <img src="https://img.youtube.com/vi/WNCl-69POro/maxresdefault.jpg" alt="Video 6">
+            <div class="overlay">
+                <h3>Project 6</h3>
+                <p>Professional portfolio piece</p>
+            </div>
+        </button>
+    </div>
+
+    <!-- Single Video View -->
+    <div class="video-detail" id="videoDetail" style="display: none;">
+        <button class="back-btn" id="backBtn">←</button>
+        <div class="video-container">
+            <iframe id="videoPlayer" width="100%" height="500" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-description">
+            <h2 id="videoTitle">Project Title</h2>
+            <p id="videoDesc">This is a sample description for the video project. Add more details about the project here.</p>
+        </div>
+    </div>
+</main>
+
+<script src="../main.js"></script>
+</body>
+</html>
